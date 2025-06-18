@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forúm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="forum.css">
+    <link rel="stylesheet" href="nav.css"> 
+    <script src="nav.js"></script> 
+
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="linkLogo" href="inicio.html">
+                <img class="Logo" src="./imagens/Group 9.png">
+            </a>
+            
+            <ul class="lista">
+                <input placeholder="🔍 Procurar Item.." type="text">
+                
+            </ul>
+
+             <a class="perfil" href="perfil.html"><img class="perfil" src="./imagens/image 10.png"></a>
+
+            <div class="menu" onclick="openMenuLateral()">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+
+        </nav>
+        <div class="menu-lateral" id="menuLateral">
+            <a href="javascript:void(0)" onclick="closeMenuLateral()">X</a>
+            <br>
+            <a href="./centraldeajuda.html">Central de Ajuda</a>
+            <a href="./forum.html">Forum</a>
+            <a href="./dicasderesponsablidade.html">Dicas de Reponsabilidade</a>
+            <br>
+           
+        </div>
+
+        <!-- Fundo escurecido -->
+        <div class="overlay" id="overlay" onclick="closeMenuLateral()"></div>
+    </header>
+</head>
+
+
+    <!-- comentarios -->
+
+    <div class="organi">
+        <h1>Perguntas frequentes</h1><br>
+        <div class="lista-org">
+            <div class="topicos">
+                <p><strong>Por que não consigo fazer login?</strong> Se você não está conseguindo fazer login,
+                Podem existir várias razões possíveis, que vão desde erros simples de digitação até problemas 
+            mais complexos com a sua conta ou com o dispositivo que está utilizando.</p>
+            </div>
+            <div class="topicos">
+                <p><strong>Como selecionar vários itens de uma vez?</strong> Para você selecionar itens Utilize a tecla
+                Ctrl (Ctrl+clique) Para você selecionar itens individuais, ou a tecla Shift (Shift+clique)
+            para selecionar um grupo de itens consecutivos.  </p>
+            </div>
+            <div class="topicos">
+                <p><strong>Posso agendar hora e data para pegar meu iten?</strong> Sim! você pode agendar quando for selecionar
+                o item pelo E-mail</p>
+            </div>
+            <div class="topicos">
+                <p><strong>Como será feita a retirada do item?</strong> Você pode agendar e a retirada será feita apenas 
+                na direção</p>
+            </div>
+            
+            <input class="duvida" placeholder="Digite aqui a sua Pergunta" type="text"> 
+          
+
+           
+
+</body>
+
+</html>
