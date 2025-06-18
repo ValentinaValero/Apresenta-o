@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css"> <!--Copia isso-->
+    <script src="nav.js"></script> <!--Copia isso-->
+
+</head>
+<body>
+
+    <!--Copia daqui-->
+    <header>
+        <nav>
+            <a class="linkLogo" href="inicio.html">
+                <img class="Logo" src="./imagens/Group 9.png">
+            </a>
+            
+            <ul class="lista">
+                <input placeholder="🔍 Procurar Item.." type="text">
+                
+            </ul>
+
+             <a class="perfil" href="perfil.html"><img class="perfil" src="./imagens/image 10.png"></a>
+
+            <div class="menu" onclick="openMenuLateral()">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+
+        </nav>
+        <div class="menu-lateral" id="menuLateral">
+            <a href="javascript:void(0)" onclick="closeMenuLateral()">X</a>
+            <br>
+            <a href="./centraldeajuda.html">Central de Ajuda</a>
+            <a href="./forum.html">Forum</a>
+            <a href="./dicasderesponsablidade.html">Dicas de Reponsabilidade</a>
+            <br>
+            
+        </div>
+
+        <!-- Fundo escurecido -->
+        <div class="overlay" id="overlay" onclick="closeMenuLateral()"></div>
+    </header>
+
+    <!--Até aqui-->
+
+</body>
+</html>

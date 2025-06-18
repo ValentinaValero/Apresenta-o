@@ -1,0 +1,135 @@
+        body {
+            margin: 0;
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+
+        }
+
+        .lista {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .lista a {
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        .lista a:hover {
+            opacity: 0.7;
+
+        }
+
+        .lista li {
+            margin-left: 32px;
+            letter-spacing: 2px;
+
+
+        }
+
+        .linkLogo{
+            width: 10px;
+            color: white;
+            text-decoration: none;
+            margin-top: 3px;
+        }
+
+         .lista input{
+            border-radius: 20px;
+            width: 400px;
+
+        }
+
+        .Logo{
+            width: 110px;
+            
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: linear-gradient(to right, rgb(14, 31, 93), rgb(42, 84, 233));
+            height: 65px;
+
+        }
+
+        .menu div {
+            width: 32px;
+            height: 3px;
+            background-color: white;
+            margin: 7px;
+
+
+        }
+
+        .menu {
+            cursor: pointer;
+            margin-top: 0.8%;
+            
+          
+        
+        }
+
+        /* Menu lateral do lado direito */
+        .menu-lateral {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: linear-gradient(to right, rgb(14, 31, 93), rgb(42, 84, 233));
+        transition: 0.5s;
+        z-index: 1000;
+        }
+
+        .menu-lateral a {
+        padding: 12px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        }
+
+        .menu-lateral a:hover {
+        background-color:rgb(14, 31, 93);
+        }
+
+        /* Fundo escurecido */
+        .overlay {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #00000066;
+        display: none;
+        
+        }
+
+        .overlay.show {
+        display: block;
+        }
+
+        .perfil{
+            margin-top: 0.8%;
+            margin-right: -230px;
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Tema escuro */
+      body.dark-mode {
+      background-color: #121212;
+      color: white;
+
+
+    }
+
+    .tema{
+        margin-left: 8%;
+    }
+        

@@ -1,0 +1,59 @@
+
+      body {
+        font-family: Arial;
+        background: #ffffff;
+        
+        
+      }
+      
+
+      .navegar{
+        text-align: center;
+
+      }
+
+      .navegar button {
+        margin: 30px 5px;
+        padding: 15px;
+        background: rgb(27, 68, 216);
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        
+
+    
+      }
+
+      .navegar button:hover{
+        transform: scale(1.2);
+        transition: 1000ms;
+
+      }
+      .coisas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+        
+      }
+      .item {
+        background: white;
+        border: 1px solid #ccc;
+        width: 180px;
+        margin: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        
+      }
+
+      .item:hover{
+        transform: scale(1.2);
+        transition: 2000ms;
+
+      }
+
+      .item img {
+        width: 100%;
+      }
+    

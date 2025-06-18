@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tema Claro/Escuro</title>
+  <style>
+  
+
+   
+  </style>
+</head>
+<body>
+  <h1>Bem-vinda, Valentina!</h1>
+  <p>Esse botão alterna entre tema claro e escuro:</p>
+  <button onclick="alternarTema()">Trocar tema</button>
+
+  <script>
+    // Verifica tema salvo no navegador
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-mode");
+    }
+
+    function alternarTema() {
+      document.body.classList.toggle("dark-mode");
+      // Salva a preferência
+      const temaAtual = document.body.classList.contains("dark-mode") ? "escuro" : "claro";
+      localStorage.setItem("tema", temaAtual);
+    }
+  </script>
+</body>
+</html>

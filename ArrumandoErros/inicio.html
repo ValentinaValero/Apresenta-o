@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Achados e perdidos </title>
+      <link rel="stylesheet" href="inicio.css">
+      <link rel="stylesheet" href="nav.css"> 
+      <link rel="stylesheet" href="nav.js"> 
+    <script src="nav.js"></script>
+    <script src="inicio.js"></script>
+  </head>
+  
+  <body>
+    <header>
+        <nav>
+            <a class="linkLogo" href="inicio.html">
+                <img class="Logo" src="./imagens/Group 9.png">
+            </a>
+            
+            <ul class="lista">
+                <input placeholder="🔍 Procurar Item.." type="text">
+                
+            </ul>
+
+             <a class="perfil" href="perfil.html"><img class="perfil" src="./imagens/image 10.png"></a>
+
+            <div class="menu" onclick="openMenuLateral()">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+
+        </nav>
+        <div class="menu-lateral" id="menuLateral">
+            <a href="javascript:void(0)" onclick="closeMenuLateral()">X</a>
+            <br>
+            <a href="./centraldeajuda.html">Central de Ajuda</a>
+            <a href="./forum.html">Forum</a>
+            <a href="./dicasderesponsablidade.html">Dicas de Reponsabilidade</a>
+            <br>
+           
+        </div>
+
+        <!-- Fundo escurecido -->
+        <div class="overlay" id="overlay" onclick="closeMenuLateral()"></div>
+    </header>
+
+    <div class="navegar">
+      <a href="inicio.html"><button>Material Escolar</button></a>
+      <a href="outrosobjetos.html"><button>Outros Objetos</button></a>
+      <a href="roupas.html"><button>Roupas</button></a>
+      <a href="brinquedos.html"><button>Brinquedos</button></a>
+    </div>
+
+    <div class="coisas">
+      <div class="item">
+        <img src="https://a-static.mlcdn.com.br/800x560/estojo-escolar-100-pens-grande-box-academie-tilibra/e-clipfix/estojo-turquesa/4207c74651c6a3c1a8995e7c90246328.jpeg">
+        <p><b>Estojo</b></p>
+        <p>Manhã - Sala 2A</p>
+        <p>09:21</p>
+        <a href="#">Esse item é seu? </a>
+      </div>
+
+      <div class="item">
+        <img src="https://m.media-amazon.com/images/I/51g8sUeO-wL.jpg">
+        <p>Fones</p>
+        <p>Tarde - Sala 8B</p>
+        <p>14:08</p>
+        <a href="#">Esse item é seu?</a>
+      </div>
+
+      <div class="item">
+        <img src="https://www.tupperware.com.br/cdn/shop/files/tw-859000_1_8c1ebcb0-6697-4ab4-b533-d346afffd97d.jpg?v=1749585622">
+        <p><b>Garrafa</b></p>
+        <p>Manhã - Sala 3D</p>
+        <p>09:21</p>
+        <a href="#">Esse item é seu?</a>
+      </div>
+
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRetQPS52BLEHDcFnAnTVsXrHEG5EAEIl1ttQ&s">
+        <p><b>Carregador</b></p>
+        <p>Manhã - Sala 1C</p>
+        <p>11:50</p>
+        <a href="#">Esse item é seu?</a>
+      </div>
+
+      <div class="item">
+        <img src="data:image/jpeg;base64,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">
+        <p><b>Caderno 20 matérias</b></p>
+        <p>Tarde - Sala 9F</p>
+        <p>12:31</p>
+        <a href="#">Esse item é seu?</a>
+      </div>
+      
+    </div>
+    <div class="links">
+      <a href="#">Achou um item perdido? adicionar item
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    margin-left: 30%;
+}
+
+
+h1{
+                  text-decoration: none;
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+                .red{
+                    color: red;
+                }
+
+              p, li{
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(31, 31, 31);
+              }
+
+              .texto{
+                margin-left: 5%;
+                margin-right: 10%;
+              }
+
+            

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perdeu? Achou! - Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="nav.js"></script>
+
+</head>
+
+<body>
+
+     <header>
+        <nav>
+            <a class="linkLogo" href="inicio.html">
+                <img class="Logo" src="./imagens/Group 9.png">
+            </a>
+            
+            <ul class="lista">
+                <input placeholder="🔍 Procurar Item.." type="text">
+                
+            </ul>
+
+                <a class="perfil" href="perfil.html"><img class="perfil" src="./imagens/image 10.png"></a>
+
+            <div class="menu" onclick="openMenuLateral()">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+
+        </nav>
+       <div class="menu-lateral" id="menuLateral">
+            <a href="javascript:void(0)" onclick="closeMenuLateral()">X</a>
+            <br>
+            <a href="./centraldeajuda.html">Central de Ajuda</a>
+            <a href="./forum.html">Forum</a>
+            <a href="./dicasderesponsablidade.html">Dicas de Reponsabilidade</a>
+            <br>
+          
+        </div>
+
+        <!-- Fundo escurecido -->
+        <div class="overlay" id="overlay" onclick="closeMenuLateral()"></div>
+    </header>
+    
+    <main class="container-perfil">
+        <section class="cartao-configuracoes-perfil">
+            <h2>Imagem de Perfil</h2>
+            <input type="file" id="uploadImagemPerfil" accept="image/*">
+
+            <h2>Nome de Exibição</h2>
+            <input type="text" id="entradaUsuario" placeholder="Digite seu nome de usuário">
+
+            <div class="grupo-configuracao">
+                <h2>Senha</h2>
+                <p><a href="#">Alterar senha</a></p>
+                <p><a href="#">Autenticação de dois fatores</a></p>
+            </div>
+
+            <div class="grupo-configuracao">
+                <h2>E-mail</h2>
+                <p><a href="#">Alterar e-mail</a></p>
+                <p><a href="#">Verificação de e-mail</a></p>
+                <p><a href="#">Histórico</a></p>
+            </div>
+
+           
+        </section>
+
+        <div class="exibicao-imagem-perfil">
+            <img id="imagemExibicaoPerfil" src="https://i.ibb.co/Wvdvyy71/Captura-de-tela-2025-05-28-115810.png"
+                alt="Exemplo de Imagem de Perfil">
+        </div>
+
+        <aside class="cartao-aviso">
+            <center>
+                <h1 style="color: rgb(184, 0, 0);">AVISO</h1>
+            </center>
+            <p>Fotos inapropriadas serão negadas pelo sistema. Caso insista, você será advertido por 3 dias e a direção
+                será notificada. Se este ocorrido acontecer novamente, sua conta será banida e só será revertida após a
+                permissão da direção.</p>
+        </aside>
+    </main>
+
+    <script src="perfil.js"></script>
+</body>
+
+
+</html>

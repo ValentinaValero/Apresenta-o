@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Ajuda</title>
+   <link rel="stylesheet" href="centraldeajuda.css">
+   <link rel="stylesheet" href="nav.css"> 
+    <script src="nav.js"></script> 
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="linkLogo" href="inicio.html">
+                <img class="Logo" src="./imagens/Group 9.png">
+            </a>
+            
+            <ul class="lista">
+                <input placeholder="🔍 Procurar Item.." type="text">
+                
+            </ul>
+
+             <a class="perfil" href="perfil.html"><img class="perfil" src="./imagens/image 10.png"></a>
+
+            <div class="menu" onclick="openMenuLateral()">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+
+        </nav>
+        <div class="menu-lateral" id="menuLateral">
+            <a href="javascript:void(0)" onclick="closeMenuLateral()">X</a>
+            <br>
+            <a href="./centraldeajuda.html">Central de Ajuda</a>
+            <a href="./forum.html">Forum</a>
+            <a href="./dicasderesponsablidade.html">Dicas de Reponsabilidade</a>
+            <br>
+            
+        </div>
+
+        <!-- Fundo escurecido -->
+        <div class="overlay" id="overlay" onclick="closeMenuLateral()"></div>
+    </header>
+
+
+<div class="caixamaosdadas">
+  <img src="https://i.ibb.co/B5DSmR1H/Design-sem-nome-6.png" alt="Mãos dadas">
+  <div class="titemcimaimg">Como podemos te ajudar?</div>
+</div>
+
+<div class="colunaesqu">
+  <div class="coluna-texto">
+    <div class="botoes">
+      <button class="botao">
+        <div class="pergunta">Como faço para encontrar um item perdido?</div>
+        <div class="resposta">
+          Vá até a seção “Itens encontrados” no menu. Você pode filtrar por data, tipo de item e local aproximado. Se encontrar um item que pareça ser seu, clique em “Reivindicar” e preencha o formulário.
+        </div>
+      </button>
+
+      <button class="botao">
+        <div class="pergunta">Perdi um objeto importante, o que devo fazer?</div>
+        <div class="resposta">
+          Acesse a área “Perdi um item” e preencha o formulário com o máximo de detalhes possíveis. Se alguém registrar esse item como encontrado, vamos te avisar por e-mail ou notificação no seu perfil.
+        </div>
+      </button>
+
+      <button class="botao">
+        <div class="pergunta">Como posso registrar um item que encontrei?</div>
+        <div class="resposta">
+          Clique em “Achei um item” e preencha os dados do objeto, como local, data, características visuais e uma foto, se possível. Isso ajuda muito para o dono identificar corretamente.
+        </div>
+      </button>
+
+      <button class="botao">
+        <div class="pergunta">Como garantir que alguém não pegue um item que não é dele?</div>
+        <div class="resposta">
+          Ao reivindicar um item, o usuário precisa responder perguntas específicas sobre ele. Só liberamos o item quando a descrição for compatível com os dados informados no momento do registro.
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="coluna-imagem">
+    <img src="https://cdn-icons-png.flaticon.com/512/3576/3576867.png" alt="Imagem de mochila perdida">
+  </div>
+</div>
+
+</body>
+</html>
